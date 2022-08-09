@@ -1,0 +1,26 @@
+{
+  "name": "electron-auto-update-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --mac --win --publish never",
+    "deploy": "electron-builder build --mac --win --publish always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aymen-ghemam/electron-auto-update-example.git"
+  },
+  "author": "Aymen Ghemam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://bitbucket.org/aymen_ghemam/electron-auto-update-test/issues"
+  },
+  "homepage": "https://bitbucket.org/aymen_ghemam/electron-auto-update-test#readme",
+  "devDependencies": {
+    "electron": "^20.0.1",
+    "electron-builder": "^23.3.3",
+    "electron-updater": "^5.2.1"
+  }
+}

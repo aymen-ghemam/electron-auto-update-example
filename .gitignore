@@ -1,0 +1,11 @@
+node_modules/
+dist/
+
+# Log files
+*.log
+
+# Applications
+*.exe
+
+*.yml
+package-lock.json
