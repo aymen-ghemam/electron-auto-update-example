@@ -1,12 +1,12 @@
 {
   "name": "electron-auto-update-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is an example of an auto-updating electron app",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder build --mac --win --publish never",
-    "deploy": "electron-builder build --mac --win --publish always"
+    "build": "electron-builder",
+    "deploy": "electron-builder --publish always",
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,11 @@
     "electron": "^20.0.1",
     "electron-builder": "^23.3.3",
     "electron-updater": "^5.2.1"
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    }
   }
 }
