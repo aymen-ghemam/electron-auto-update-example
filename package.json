@@ -7,6 +7,7 @@
     "start": "electron .",
     "build": "electron-builder",
     "deploy": "electron-builder --publish always",
+    "release": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -20,13 +21,15 @@
   "homepage": "https://bitbucket.org/aymen_ghemam/electron-auto-update-test#readme",
   "devDependencies": {
     "electron": "^20.0.1",
-    "electron-builder": "^23.3.3",
-    "electron-updater": "^5.2.1"
+    "electron-builder": "^23.3.3"
   },
   "build": {
     "appId": "your.id",
     "mac": {
       "category": "your.app.category.type"
     }
+  },
+  "dependencies": {
+    "electron-updater": "^5.2.1"
   }
 }
