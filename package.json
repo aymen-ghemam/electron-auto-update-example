@@ -16,20 +16,12 @@
   "author": "Aymen Ghemam",
   "license": "MIT",
   "bugs": {
-    "url": "https://bitbucket.org/aymen_ghemam/electron-auto-update-test/issues"
+    "url": "https://github.com/aymen-ghemam/electron-auto-update-test/issues"
   },
-  "homepage": "https://bitbucket.org/aymen_ghemam/electron-auto-update-test#readme",
+  "homepage": "https://github.com/aymen-ghemam/electron-auto-update-test#readme",
   "devDependencies": {
     "electron": "^20.0.1",
     "electron-builder": "^23.3.3"
-  },
-  "build": {
-    "appId": "your.id",
-    "publish": 
-      {
-        "provider": "github",
-        "token": "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"
-      }
   },
   "dependencies": {
     "electron-updater": "^5.2.1"
