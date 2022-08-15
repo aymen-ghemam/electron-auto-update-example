@@ -1,7 +1,5 @@
 # Electron Auto Updated App Example
 
-Foobar is a Python library for dealing with word pluralization.
-
 ## Installation
 
 After cloning the repo use NPM to install the dependencies.
