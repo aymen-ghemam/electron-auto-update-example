@@ -1,0 +1,12 @@
+appId: com.electron-auto-update-example.app
+productName: Electron-Auto-Update-Example
+win:
+  target:
+    - nsis
+nsis:
+  perMachine: true
+  allowElevation: true
+publish:
+  provider: github
+  token: github_access_token
+

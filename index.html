@@ -23,6 +23,7 @@
       display: none;
     }
   </style>
+  <script src="renderer.js" defer></script>
 </head>
 <body>
   <h1>Electron Auto Update Example</h1>
@@ -35,36 +36,4 @@
       Restart
     </button>
   </div>
-
-  <script>
-    const version = document.getElementById("version");
-    const notification = document.getElementById("notification");
-    const message = document.getElementById("message");
-    const restartButton = document.getElementById("restart-button");
-
-    const func = async () => {
-      const v = await window.electronAPI.appVersion();
-      version.innerText = v;
-    };
-    func();
-
-    window.electronAPI.onUpdateAvailable((e) => {
-      message.innerText = "A new update is available. Downloading now...";
-      notification.classList.remove("hidden");
-    });
-
-    window.electronAPI.onUpdateDownloaded((e) => {
-      message.innerText =
-        "Update Downloaded. It will be installed on restart. Restart now?";
-      restartButton.classList.remove("hidden");
-      notification.classList.remove("hidden");
-    });
-
-    function closeNotification() {
-      notification.classList.add("hidden");
-    }
-    function restartApp() {
-      window.electronAPI.restart;
-    }
-  </script>
 </body>

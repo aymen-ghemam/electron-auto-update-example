@@ -43,14 +43,18 @@ app.on('activate', function () {
   }
 });
 
+
+//check for updates and notify the renderer process
 autoUpdater.on('update-available', () => {
   mainWindow.webContents.send('update_available');
 });
 
+//download the update and notify the renderer process
 autoUpdater.on('update-downloaded', () => {
   mainWindow.webContents.send('update_downloaded');
 });
 
+//restart the app and install the update 
 ipcMain.on('restart_app', () => {
   autoUpdater.quitAndInstall();
 });
